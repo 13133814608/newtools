@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- 服务器1009 -->
+<suite name="Default suite">
+  <test verbose="2" name="Default test">
+    <parameter name="testFilePath" value="excel/服务器1009.xlsx"></parameter>
+    <parameter name="testResultDirPath" value="result"></parameter>
+    <classes>
+      <class name="com.com.sxf.NewTest" />
+      <class name="com.com.sxf.Newdemo"/>
+    </classes>
+  </test>
+ </suite>
+ 
