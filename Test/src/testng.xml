@@ -1,9 +1,8 @@
-<suite name="TestWeChat" parallel="tests" thread-count="1">
-    <parameter name="appPackage" value="com.tencent.mm"/>
-    <parameter name="appActivity" value="com.tencent.mm.ui.LauncherUI"/>
-    <test name="WeChat">
-        <classes>
-            <class name="BorwserEngin"/>
-        </classes>
-    </test>
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Class Suite" verbose="1">
+<test name="Test">
+<classes>
+<class name="test.TestDemo"/>
+</classes>
+</test>
 </suite>

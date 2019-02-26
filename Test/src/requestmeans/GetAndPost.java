@@ -46,7 +46,9 @@ public class GetAndPost {
          response = EntityUtils.toString(httpresponse.getEntity());
         return response;
       }  //获取各个文件字段的值
+     
 	 @SuppressWarnings("unused")
+	 
 	    private static String getValue(HSSFCell cell) {
 	        if (cell.getCellType() == CellType.BOOLEAN) {
 	            // 返回布尔类型 值
@@ -141,6 +143,7 @@ public class GetAndPost {
                 HSSFRow row = sheet.getRow(rowNum);
                 if (row == null)
                     continue;
+                
                 info = new LoginInfo();
                 HSSFCell cell0 = row.getCell(0);
                 if (cell0 == null)
@@ -158,7 +161,7 @@ public class GetAndPost {
                 HSSFCell cell3 = row.getCell(3);
                 if (cell3 == null)
                     continue;
-                info.setPassword(cell3.getStringCellValue());
+                info.setPassword(String.valueOf(cell3.getNumericCellValue()));
                 HSSFCell cell4 = row.getCell(4);
                 if (cell4== null)
                     continue;
@@ -167,6 +170,14 @@ public class GetAndPost {
                 if (cell5== null)
                     continue;
                 info.setReallyresult(cell5.getStringCellValue());
+                HSSFCell cell6 = row.getCell(6);
+                if(cell6==null)
+                	 continue;
+                info.setReallyresult(cell6.getStringCellValue());
+                HSSFCell cell7 = row.getCell(7);
+                if(cell7==null)
+                	 continue;
+                info.setReallyresult(cell7.getStringCellValue());
                 list.add(info);
             }
         }
@@ -192,5 +203,8 @@ public class GetAndPost {
         	System.out.println(listdata.get(i));
         }
 		return listdata;
+    }
+    public  static String RequestRpc() {
+    	 return null;
     }
 }

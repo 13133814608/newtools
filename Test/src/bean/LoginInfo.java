@@ -16,8 +16,18 @@ public class LoginInfo {
 	private String password;
 	//预期结果
 	private String result;
+	//請求方法
+	private String RequestMeans;
+	
+	public String getRequestMeans() {
+		return RequestMeans;
+	}
+	public void setRequestMeans(String requestMeans) {
+		RequestMeans = requestMeans;
+	}
 	public String getUsername() {
 		return username;
+		
 	}
 	public void setUsername(String name) {
 		this.username = name;
@@ -40,8 +50,6 @@ public class LoginInfo {
 	public void setUrl(String url) {
 		this.url = url;
 	}
-    
-
 	public String getResult() {
 		return result;
 	}

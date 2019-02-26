@@ -3,7 +3,6 @@
   <listeners>
     <listener class-name="myListener" />
   </listeners>
-
   <test name="Simple test">
     <classes>
       <class name="SampleTest" />

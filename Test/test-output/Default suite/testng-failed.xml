@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="POIReadExcelTool">
+      <class name="TestDemo">
         <methods>
-          <include name="f1"/>
+          <include name="runmain"/>
         </methods>
-      </class> <!-- POIReadExcelTool -->
+      </class> <!-- TestDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
