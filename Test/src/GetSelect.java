@@ -46,6 +46,7 @@ public class GetSelect {
                     //输出数组
                     for(String s:strs) {
                     	System.out.println(s);
+                    	System.out.println(s);
                     }
                 }
             }
